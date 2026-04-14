@@ -1,0 +1,57 @@
+{
+  "name": "auraflow",
+  "version": "1.0.0",
+  "description": "46 ready-to-use design system themes as CSS custom properties",
+  "license": "MIT",
+  "repository": "dehlya/auraflow",
+  "homepage": "https://dehlya-studio.ch/theme-studio",
+  "author": "Dehlya Studio",
+  "keywords": [
+    "css",
+    "themes",
+    "design-tokens",
+    "custom-properties",
+    "design-system",
+    "css-variables"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./themes/*.css": "./dist/themes/*.css",
+    "./auraflow.css": "./dist/auraflow.css",
+    "./auraflow.min.css": "./dist/auraflow.min.css"
+  },
+  "bin": {
+    "auraflow": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup && node scripts/build-css.mjs",
+    "build:js": "tsup",
+    "build:css": "node scripts/build-css.mjs",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsup": "^8",
+    "typescript": "^5"
+  }
+}
