@@ -3,6 +3,7 @@
 **46 ready-to-use design system themes as CSS custom properties.**
 
 Each theme is a complete set of 23 design tokens — colors, typography, spacing, shadows — expressed as CSS custom properties. Drop one into your project and your entire UI adapts.
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/dehlya_studio)
 
 ## Quick Start
 
