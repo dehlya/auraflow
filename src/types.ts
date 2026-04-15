@@ -49,6 +49,9 @@ export type ThemeId =
   | "aurora"
   | "espresso"
   | "hanami"
+  | "datacycle"
+  | "blueprint"
+  | "satellite"
 
 export type ThemeMode = "light" | "dark"
 
