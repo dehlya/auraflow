@@ -1,7 +1,7 @@
 {
   "name": "auraflow",
-  "version": "1.1.0",
-  "description": "46 ready-to-use design system themes as CSS custom properties",
+  "version": "1.1.1",
+  "description": "AuraFlow CSS — 49 drop-in design-system themes as pure CSS custom properties. Zero runtime, framework-agnostic. (Not the AI image model.)",
   "license": "MIT",
   "repository": "dehlya/auraflow",
   "homepage": "https://dehlya-studio.ch/theme-studio",
@@ -10,9 +10,15 @@
     "css",
     "themes",
     "design-tokens",
-    "custom-properties",
     "design-system",
-    "css-variables"
+    "custom-properties",
+    "css-variables",
+    "theme-library",
+    "dark-mode",
+    "ui",
+    "tailwind-alternative",
+    "auraflow",
+    "auraflow-css"
   ],
   "type": "module",
   "main": "./dist/index.cjs",

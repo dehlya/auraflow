@@ -1,9 +1,16 @@
-# AuraFlow
+# AuraFlow CSS
 
-**46 ready-to-use design system themes as CSS custom properties.**
+**49 ready-to-use design system themes as drop-in CSS custom properties.**
 
-Each theme is a complete set of 23 design tokens — colors, typography, spacing, shadows — expressed as CSS custom properties. Drop one into your project and your entire UI adapts.
+> ⚠️ **Not the AI image model.** AuraFlow CSS is a front-end theme library by [Dehlya Studio](https://dehlya-studio.ch). You're probably not looking for the text-to-image diffusion model — that one is Python-based and lives [here](https://github.com/fal-ai/AuraFlow). This package is 100% CSS + TypeScript, zero ML.
+
+Each theme is a complete set of 23 design tokens — colors, typography, radii, shadows, gradients — expressed as CSS custom properties. Drop one into your project and your entire UI adapts.
+
+[![npm version](https://img.shields.io/npm/v/auraflow.svg)](https://www.npmjs.com/package/auraflow)
+[![license](https://img.shields.io/npm/l/auraflow.svg)](./LICENSE)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/dehlya_studio)
+
+**Live gallery → [dehlya-studio.ch/theme-studio](https://dehlya-studio.ch/theme-studio)**
 
 ## Quick Start
 
@@ -24,7 +31,7 @@ npm install auraflow
 // Import a single theme CSS
 import "auraflow/themes/sakura.css"
 
-// Or import all 46 themes
+// Or import all 49 themes
 import "auraflow/auraflow.css"
 ```
 
@@ -68,23 +75,22 @@ npx auraflow info sakura
 
 ## Themes
 
-| Theme | Mode | Tagline |
-|-------|------|---------|
-| light | light | Soft, cute, daylight-friendly |
-| dark | dark | Cyberpunk studio floor |
-| hanami | light | Cherry blossoms at dusk |
-| atelier | light | Oil-stained studio smock |
-| azuki | dark | Midnight matcha ceremony |
-| dazed | dark | Neon-soaked magazine spread |
-| carbon | dark | Monochrome command line |
-| sakura | light | Pastel petals on a spring breeze |
-| terminal | dark | Green phosphor CRT |
-| nord | dark | Arctic code editor |
-| synthwave | dark | Retro-futuristic sunset |
-| mocha | dark | Coffee-stained notebook |
-| ... and 34 more | | |
+49 themes across light + dark modes. A few favourites:
 
-Run `npx auraflow list` to see all 46.
+| Theme      | Mode  | Tagline                               |
+|------------|-------|---------------------------------------|
+| hanami     | light | Cherry blossoms at dusk               |
+| sakura     | light | Pastel petals on a spring breeze      |
+| datacycle  | light | Engineering docs with opinions        |
+| blueprint  | dark  | Technical drawings on cyanotype paper |
+| satellite  | dark  | Mission control, 3AM, all systems nominal |
+| nord       | dark  | Arctic code editor                    |
+| synthwave  | dark  | Retro-futuristic sunset               |
+| terminal   | dark  | Green phosphor CRT                    |
+| cottagecore| light | Hand-pressed flowers in a leather journal |
+| y2k        | light | Frosted glass, Bubblegum, Tamagotchi  |
+
+Run `npx auraflow list` for all 49.
 
 ## CSS Custom Properties
 
@@ -122,6 +128,22 @@ Themes reference font families by name but don't load them. Add your own font lo
 <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet" />
 ```
 
+## Why AuraFlow CSS?
+
+- **Zero runtime.** Pure CSS custom properties. No provider, no context, no JS required.
+- **Framework-agnostic.** Works in React, Vue, Svelte, Astro, plain HTML — anywhere CSS does.
+- **Swap themes instantly.** Change one `data-theme` attribute and your whole UI re-skins.
+- **Tree-shakeable.** Import only the themes you use, or the bundle if you want them all.
+- **Tiny.** Each theme is < 4 KB. The full bundle minified is ~78 KB.
+- **Editorial.** Themes aren't bland templates — they're opinionated design systems with personality.
+
+## Disambiguation
+
+If you arrived here looking for:
+
+- 🎨 **Drop-in CSS themes for your website** → you're in the right place.
+- 🖼️ **AuraFlow the AI image generation model** → see [fal-ai/AuraFlow](https://github.com/fal-ai/AuraFlow). Different project, unrelated.
+
 ## License
 
-MIT -- Dehlya Studio
+MIT — Dehlya Studio
